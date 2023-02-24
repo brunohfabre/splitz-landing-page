@@ -1,91 +1,21 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div className={styles.container}>
+      <svg className={styles.logo} viewBox="0 0 515 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M233.651 43.0929C231.441 32.0346 222.323 17.6588 198.561 17.6588C180.049 17.6588 164.438 30.9287 164.438 48.3456C164.438 63.1361 174.523 73.2268 190.134 76.4061L203.811 79.1706C211.409 80.6911 215.692 85.1145 215.692 90.7819C215.692 97.6933 210.027 102.808 199.804 102.808C185.989 102.808 179.22 94.0994 178.391 84.4233L160.708 89.1231C162.228 103.084 173.694 119.81 199.666 119.81C222.461 119.81 235.033 104.605 235.033 89.5378C235.033 75.7149 225.5 64.1037 207.679 60.648L194.002 58.0216C186.818 56.6393 183.365 52.3542 183.365 46.9633C183.365 40.4665 189.443 34.5227 198.699 34.5227C211.133 34.5227 215.553 42.9547 216.52 48.3456L233.651 43.0929Z" fill="white"/>
+        <path d="M266.098 144V111.102C269.413 115.663 276.321 119.395 285.715 119.395C304.918 119.395 317.766 104.19 317.766 83.594C317.766 63.4125 306.299 48.2073 286.406 48.2073C276.183 48.2073 268.585 52.7689 265.545 58.0216V49.7279H247.724V144H266.098ZM299.668 83.7322C299.668 95.8963 292.208 102.946 282.814 102.946C273.42 102.946 265.822 95.7581 265.822 83.7322C265.822 71.7063 273.42 64.6566 282.814 64.6566C292.208 64.6566 299.668 71.7063 299.668 83.7322Z" fill="white"/>
+        <path d="M350.688 117.737V17.6588H332.314V117.737H350.688Z" fill="white"/>
+        <path d="M388.733 117.737V49.7279H370.359V117.737H388.733ZM368.148 27.473C368.148 33.5551 373.26 38.6695 379.477 38.6695C385.832 38.6695 390.805 33.5551 390.805 27.473C390.805 21.1145 385.832 16 379.477 16C373.26 16 368.148 21.1145 368.148 27.473Z" fill="white"/>
+        <path d="M431.061 29.4082H414.483V38.946C414.483 45.0281 411.167 49.7279 403.983 49.7279H400.529V66.0389H412.825V97.6933C412.825 110.825 421.114 118.704 434.376 118.704C439.764 118.704 443.08 117.737 444.737 117.045V101.84C443.77 102.117 441.284 102.393 439.073 102.393C433.824 102.393 431.061 100.458 431.061 94.514V66.0389H444.737V49.7279H431.061V29.4082Z" fill="white"/>
+        <path d="M514.708 117.737V101.702H480.999L514.155 65.0713V49.7279H459.31V65.6242H490.67L458.481 101.564V117.737H514.708Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M63.5715 0C80.4318 2.0072e-06 96.6014 6.69769 108.523 18.6197L63.5715 63.5715L18.6197 108.523C6.69769 96.6014 -1.5054e-06 80.4317 0 63.5715C1.5054e-06 46.7113 6.6977 30.5416 18.6197 18.6197C30.5416 6.69769 46.7113 -2.0072e-06 63.5715 0ZM63.5714 15.8929C76.2166 15.8929 88.3438 20.9162 97.2853 29.8576L63.5715 63.5715L29.8575 97.2854C20.916 88.3439 15.8927 76.2167 15.8927 63.5715C15.8927 50.9264 20.916 38.7991 29.8575 29.8576C38.799 20.9162 50.9262 15.8929 63.5714 15.8929Z" fill="#FFAE45"/>
+        <path d="M63.5712 31.7858C72.0013 31.7858 80.0861 35.1346 86.0471 41.0956L74.8092 52.3335C71.8287 49.3531 67.7863 47.6787 63.5712 47.6787C59.3562 47.6787 55.3138 49.3531 52.3333 52.3336C49.3528 55.3141 47.6784 59.3565 47.6784 63.5715C47.6784 67.7866 49.3528 71.829 52.3332 74.8095L41.0952 86.0475C35.1342 80.0865 31.7854 72.0017 31.7854 63.5715C31.7854 55.1414 35.1342 47.0566 41.0952 41.0956C47.0562 35.1346 55.141 31.7858 63.5712 31.7858Z" fill="#FFAE45"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M57.9528 144C41.0926 144 24.923 137.302 13.001 125.38L57.9528 80.4284L102.905 35.4766C114.827 47.3985 121.524 63.5682 121.524 80.4284C121.524 97.2886 114.827 113.458 102.905 125.38C90.9827 137.302 74.8131 144 57.9528 144ZM57.953 128.107C45.3078 128.107 33.1806 123.084 24.2391 114.142L57.9528 80.4284L91.6669 46.7145C100.608 55.656 105.632 67.7833 105.632 80.4284C105.632 93.0736 100.608 105.201 91.6669 114.142C82.7254 123.084 70.5981 128.107 57.953 128.107Z" fill="#F55864"/>
+        <path d="M57.9532 112.214C49.5231 112.214 41.4382 108.865 35.4772 102.904L46.7152 91.6665C49.6957 94.6469 53.7381 96.3213 57.9531 96.3213C62.1681 96.3213 66.2106 94.6469 69.1911 91.6664C72.1715 88.6859 73.846 84.6435 73.846 80.4284C73.846 76.2134 72.1716 72.171 69.1911 69.1905L80.4291 57.9525C86.3901 63.9135 89.7389 71.9983 89.7389 80.4284C89.7389 88.8586 86.3901 96.9434 80.4291 102.904C74.4681 108.865 66.3833 112.214 57.9532 112.214Z" fill="#F55864"/>
+      </svg>
+    </div>
   )
 }
